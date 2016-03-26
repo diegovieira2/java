@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class imc {
+
+	public static void main(String[] args){
+		//calculo de IMC
+		System.out.println("Vamos Calacular seu IMC");
+		System.out.println("Digite Seu Peso");
+		Scanner in = new Scanner(System.in);
+		double peso = in.nextDouble();
+				
+		
+		System.out.println("Digite sua altura");
+		Scanner in1 = new Scanner(System.in);
+		double altura = in1.nextDouble();
+		
+		double altura2 = altura*altura;
+		double calc = peso/altura2;
+		System .out.println("Seu IMC é " +calc);
+		
+		if(calc <= 17){
+			System.out.println("Voce esta Muito abaixo do peso");
+		}
+		else if( (calc >= 17) && (calc <= 18.49) ){
+			System.out.println("Voce esta abaixo do peso!");
+		}
+		else if( (calc >= 18.50) && (calc <= 24.99) ){
+			System.out.println("Voce esta com seu peso ideal!");
+		}
+		else if( (calc >= 25) && (calc <= 29.99) ){
+			System.out.println("Voce esta acima do peso!");
+		}
+		else if( (calc >= 30) && (calc <= 34.99) ){
+			System.out.println("Voce esta com Obesidade I!");
+		}
+		else if( (calc >= 35) && (calc <= 39.99) ){
+			System.out.println("Voce esta com Obesidade II!");
+		}
+		else if (calc >= 40){
+			System.out.println("Voce esta com Obesidade III!");
+		}
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}
